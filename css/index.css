@@ -67,108 +67,117 @@ h1, h2, h3, h4, h5 {
 :root {
     font-size: 16px;
 }
-/* @media(max-width: 550px) {
-    :root {
-        font-size: 24px;
-    }    
-} */
+
 .container {
-	margin: 0 auto;
+    margin: 0 auto;
+    max-width: 800px;
 }
 
 body {
-	margin: 5%;
-}
-
-.container {
-	width: 100%;
+	margin: 4rem;
 }
 
 header {
-	display: flex;
-	justify-content: space-between;
+    display: flex;
 }
 
+@media(max-width: 800px) {
+    header {
+        flex-direction: column-reverse;
+    }
+}
+
+
+
 header nav {
-	display: flex;
-	flex-grow: 1;
+    display: flex;
+    flex-grow: 1;
 	justify-content: space-around;
 }
 
 header nav a {
-	color: grey;
+    color: grey;
+    text-decoration: none;
+}
+
+header > a {
+    text-align: center;
+}
+
+@media(max-width: 800px) {
+    header > a {
+        margin: 2rem;
+    }
 }
 
 .main {
-	display: flex;
-	justify-content: space-around;
-	margin: 5%;
-	
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+	margin: 3rem auto;	
 }
 
 .main-left {
 	display: flex;
 	flex-direction: column;
-	align-content: center;
-	justify-content: center;
+    align-items: center;
+
 }
 
-.innov {
-	font-size: 5em;
+.main-left p {
+	font-size: 4rem;
     font-family: 'Bangers', cursive;
-	text-align: center;
-	padding: 0%;
-}
-
-.button-wrapper {
-	text-align: center;
+    text-align: center;
+    margin: 2rem;
 }
 
 .main-left button {
-	font-size: 1em;
-	border: 1px solid black;
-	width: 75%;
-	margin: 3%;
+    text-align: center;
+	font-size: 1rem;
+	border: 0.1rem solid black;
+    width: 50%;
+    padding: 0.5rem;
+}
+
+@media(max-width: 800px) {
+    .main > img {
+        display: none;
+    }
 }
 
 .middle {
-	display: flex;
+    display: flex;
+    border-top: 0.15rem solid black;
 }
 
 .middle-img {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	margin: 5%;
+    max-width:100%;
+    max-height:100%;
 }
 
 .bottom {
-	display: flex;
+    display: flex;
+    border-bottom: 0.15rem solid black;
 }
 
-.middle p, .bottom p {
-	margin: 5%;
+.middle article, .bottom article {
+    margin: 2rem 0.5rem 2rem auto;
 }
 
 .contact {
 	display: flex;
-	flex-direction: column;
-}
-
-hr {
-	margin: 5%;
+    flex-direction: column;
+    margin: 2rem auto;
 }
 
 footer {
 	text-align: center;
-	margin: 10%;
 }
 
 
-
+/* 
 .services-header-img {
 	display: block;
-	margin: 3% auto 3% auto;
 	
 
 }
@@ -189,9 +198,7 @@ h1 {
 	flex-direction: column;
 	background-color: whitesmoke;
 	width: 45%;
-	padding: 2%;
 	border: 1px solid black;
-	margin: 2%;
 
 }
 
@@ -199,8 +206,6 @@ h1 {
 	border: 1px solid black;
 	border-radius: 8%;
 	width: 25%;
-	padding: 2%;
-	margin-top: 5%;
 	background-color: white;
 }
 
@@ -217,7 +222,6 @@ h1 {
 }
 
 .facts p {
-	margin: 2%, 0%;
 }
 
 .facts ul {
@@ -225,5 +229,4 @@ h1 {
 }
 
 .facts ul li {
-	margin: 2%;
-}
+} */
