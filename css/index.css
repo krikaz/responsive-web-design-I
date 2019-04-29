@@ -63,15 +63,23 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
+/* My code */
 
 :root {
     font-size: 16px;
+}
+
+@media(max-width: 500px) {
+    :root {
+        font-size: 20px;
+    }    
 }
 
 .container {
     margin: 0 auto;
     max-width: 800px;
 }
+
 
 body {
 	margin: 4rem;
@@ -95,10 +103,25 @@ header nav {
 	justify-content: space-around;
 }
 
+@media(max-width: 500px) {
+    header nav {
+        flex-direction: column;
+    }    
+}
+
 header nav a {
     color: grey;
     text-decoration: none;
+    text-align: center;
 }
+
+@media(max-width: 500px) {
+    header nav a {
+        border-bottom: 0.1rem solid grey;
+        padding: 1rem;
+    }    
+}
+
 
 header > a {
     text-align: center;
@@ -106,7 +129,15 @@ header > a {
 
 @media(max-width: 800px) {
     header > a {
-        margin: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media(max-width: 500px) {
+    header > a {
+        margin-bottom: 0rem;
+        border-bottom: 0.1rem solid grey;
+        padding: 1rem;
     }
 }
 
@@ -150,18 +181,25 @@ header > a {
     border-top: 0.15rem solid black;
 }
 
+@media(max-width: 500px) {
+    .middle {
+        flex-direction: column;
+    }    
+}
+
+.middle article {
+    margin: 2rem 0.5rem 2rem auto;
+}
+
+@media(max-width: 500px) {
+    .middle article {
+        margin: 1rem 0.5rem 1rem auto;
+    }    
+}
+
 .middle-img {
     max-width:100%;
     max-height:100%;
-}
-
-.bottom {
-    display: flex;
-    border-bottom: 0.15rem solid black;
-}
-
-.middle article, .bottom article {
-    margin: 2rem 0.5rem 2rem auto;
 }
 
 .contact {
