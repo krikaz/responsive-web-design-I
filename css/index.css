@@ -76,8 +76,9 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    margin: 0 auto;
+    width: 100%;
     max-width: 800px;
+    margin: 0 auto;  
 }
 
 
@@ -177,22 +178,26 @@ header > a {
 }
 
 .middle {
-    display: flex;
     border-top: 0.15rem solid black;
+    border-bottom: 0.15rem solid black;
+}
+
+.articles {
+    display: flex;
 }
 
 @media(max-width: 500px) {
-    .middle {
+    .articles {
         flex-direction: column;
     }    
 }
 
-.middle article {
+.articles article {
     margin: 2rem 0.5rem 2rem auto;
 }
 
 @media(max-width: 500px) {
-    .middle article {
+    .articles article {
         margin: 1rem 0.5rem 1rem auto;
     }    
 }
