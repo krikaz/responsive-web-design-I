@@ -1,3 +1,277 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* My code */
+
+:root {
+    font-size: 16px;
+}
+
+@media(max-width: 500px) {
+    :root {
+        font-size: 20px;
+    }    
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;  
+}
 
 
+body {
+	margin: 4rem;
+}
+
+header {
+    display: flex;
+}
+
+@media(max-width: 800px) {
+    header {
+        flex-direction: column-reverse;
+    }
+}
+
+
+
+header nav {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
+}
+
+@media(max-width: 500px) {
+    header nav {
+        flex-direction: column;
+    }    
+}
+
+header nav a {
+    color: grey;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+@media(max-width: 500px) {
+    header nav a {
+        border-bottom: 0.1rem solid grey;
+        padding: 1rem;
+    }    
+}
+
+
+header > a {
+    text-align: center;
+}
+
+@media(max-width: 800px) {
+    header > a {
+        margin-bottom: 2rem;
+    }
+}
+
+@media(max-width: 500px) {
+    header > a {
+        margin-bottom: 0rem;
+        border-bottom: 0.1rem solid grey;
+        padding: 1rem;
+    }
+}
+
+.main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+	margin: 3rem auto;	
+}
+
+.main-left {
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+
+}
+
+.main-left p {
+	font-size: 4rem;
+    font-family: 'Bangers', cursive;
+    text-align: center;
+    margin: 2rem;
+}
+
+.main-left button {
+    text-align: center;
+	font-size: 1rem;
+	border: 0.1rem solid black;
+    width: 50%;
+    padding: 0.5rem;
+}
+
+@media(max-width: 800px) {
+    .main > img {
+        display: none;
+    }
+}
+
+.middle {
+    border-top: 0.15rem solid black;
+    border-bottom: 0.15rem solid black;
+}
+
+.articles {
+    display: flex;
+}
+
+@media(max-width: 500px) {
+    .articles {
+        flex-direction: column;
+    }    
+}
+
+.articles article {
+    margin: 2rem 0.5rem 2rem auto;
+}
+
+@media(max-width: 500px) {
+    .articles article {
+        margin: 1rem 0.5rem 1rem auto;
+    }    
+}
+
+.middle-img {
+    max-width:100%;
+    max-height:100%;
+}
+
+.contact {
+	display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+}
+
+footer {
+	text-align: center;
+}
+
+
+/* 
+.services-header-img {
+	display: block;
+	
+
+}
+
+h1 {
+	font-size: 2em;
+}
+
+.container-department {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+}
+
+.container-department article {
+	display: flex;
+	flex-direction: column;
+	background-color: whitesmoke;
+	width: 45%;
+	border: 1px solid black;
+
+}
+
+.container-department button {
+	border: 1px solid black;
+	border-radius: 8%;
+	width: 25%;
+	background-color: white;
+}
+
+.container-facts {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.facts {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 50%;
+	
+}
+
+.facts p {
+}
+
+.facts ul {
+	list-style-type: square;
+}
+
+.facts ul li {
+} */
